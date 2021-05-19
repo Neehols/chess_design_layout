@@ -1,0 +1,132 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.schaakbord{
+    display: flex;
+    border: 10px solid black;
+    flex-direction: row;
+    font-size: 75px;
+    text-align: center;
+}
+
+.box:hover{
+    opacity: 0.5;
+}
+
+.row:nth-child(odd) .box:nth-child(even){
+    height: 100px;
+    width: 100px;
+    background-color: rgb(119, 51, 51);
+}
+
+.row:nth-child(even) .box:nth-child(odd){
+    height: 100px;
+    width: 100px;
+    background-color: rgb(119, 51, 51);
+}
+
+.row:nth-child(odd) .box:nth-child(odd){
+    height: 100px;
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+}
+
+.row:nth-child(even) .box:nth-child(even){
+    height: 100px;
+    width: 100px;
+    background-color: rgb(255, 255, 255)
+}
+
+/* Pion */
+
+.pawns::after{
+    content:'\265F';
+ }
+ 
+ /* Toren */
+ 
+ .rook::after{
+    content: '\265C';
+ }
+ 
+ /* Paarden */
+ 
+ .knight::after{
+    content: '\265E';
+ }
+ 
+ /* Lopers */
+ 
+ .bishop::after{
+    content: '\265D';
+ }
+ 
+ /* Koning */
+ 
+ .king::after{
+    content: '\265A';
+ }
+
+ .queen::after{
+    content: '\265B';
+ }
+ 
+ /* Koningin */
+
+ .queen::after{
+    content: '\265B';
+ }
+ 
+ .queen_::after{
+    content: '\2655';
+    color: rgb(83, 115, 255);
+ }
+
+ /* Pion */
+ 
+.pawns_::after{
+    content:'\2659';
+    color: rgb(83, 115, 255);
+ }
+ 
+ /* Torens */
+ 
+ .rook_::after{
+    content: '\2656';
+    color: rgb(83, 115, 255);
+ }
+ 
+ /* Paarden */
+ 
+ .knight_::after{
+    content: '\2658';
+    color: rgb(83, 115, 255);
+ }
+ 
+ /* Loper */
+ 
+ .bishop_::after{
+    content: '\2657';
+    color: rgb(83, 115, 255);
+ }
+ 
+ /* Koning */
+ 
+ .king_::after{
+    content: '\2654';
+    color: rgb(83, 115, 255);
+ }
+ 
+ /* Koningin */
+ 
+ .queen_::after{
+    content: '\2655';
+    color: rgb(83, 115, 255);
+ }
